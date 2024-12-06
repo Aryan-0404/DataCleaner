@@ -191,10 +191,15 @@
         <div class="icon"></div>
         <p class="info-text">Efficiently clean your data for improved quality and analysis. Upload your file and let our tool handle the rest. Clean data for better decisions!</p>
         
-        <form method="POST" enctype="multipart/form-data">
+<!--         <form method="POST" enctype="multipart/form-data">
             <input type="file" name="file" accept=".csv,.xlsx" required>
             <button type="submit">Clean Data</button>
-        </form>
+        </form> -->
+        <form method="POST" enctype="multipart/form-data" action="https://datacleaner-1.onrender.com">
+    <input type="file" name="file" accept=".csv,.xlsx" required>
+    <button type="submit">Clean Data</button>
+</form>
+
 
         <div class="details">
             <p><strong>Supported Formats:</strong> CSV, Excel (.xlsx)</p>
