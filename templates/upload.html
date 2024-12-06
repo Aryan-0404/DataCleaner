@@ -1,0 +1,219 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Cleaner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            text-align: center;
+            margin-top: 30px;
+        }
+        input[type="file"] {
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload Your File for Cleaning</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <br>
+        <button type="submit">Upload and Clean</button>
+    </form>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Cleaner - Your Data Solution</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, rgb(18, 18, 32), rgb(186, 171, 171), rgba(60, 53, 53, 0.8)); /* Professional dark gradient */
+            color: white;
+        }
+
+        .wrapper {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6); /* Slightly dark background */
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 700px;
+            width: 100%;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25); /* Soft shadow */
+            transform: translateY(20px);
+            animation: slideIn 1s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(40px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .info-text {
+            margin-bottom: 25px;
+            font-size: 1.2em;
+            color: #d1d1d1;
+            animation: fadeInText 1.5s ease-in-out;
+        }
+
+        @keyframes fadeInText {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .info-text:hover {
+            color: #f4e164;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input[type="file"] {
+            font-size: 1.1em;
+            padding: 12px;
+            margin: 20px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            color: #333;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        input[type="file"]:hover {
+            background-color: #f4e164;
+            transform: scale(1.05);
+        }
+
+        button {
+            padding: 12px 28px;
+            font-size: 1.2em;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+
+        .details {
+            font-size: 1.1em;
+            color: #aaa;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 1.1em;
+            color: #ddd;
+            text-align: center;
+        }
+
+        footer a {
+            color: #28a745;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #218838;
+        }
+
+        .icon {
+            width: 70px;
+            height: 70px;
+            background: url('https://img.icons8.com/ios/452/data-analytics.png') center/cover;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>File Cleaner</h1>
+        <div class="icon"></div>
+        <p class="info-text">Efficiently clean your data for improved quality and analysis. Upload your file and let our tool handle the rest. Clean data for better decisions!</p>
+        
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".csv,.xlsx" required>
+            <button type="submit">Clean Data</button>
+        </form>
+
+        <div class="details">
+            <p><strong>Supported Formats:</strong> CSV, Excel (.xlsx)</p>
+            <p>Our tool helps with cleaning missing data, removing duplicates, and standardizing columns for seamless analysis.</p>
+        </div>
+
+        <footer>
+            <p>Developed by <strong>Aryan Singh</strong></p>
+            <p>
+                <a href="https://www.linkedin.com/in/aryan-singh-45a909281/" target="_blank">LinkedIn</a> | 
+                <a href="https://aryan-0404.github.io/Portfolio123/" target="_blank">My Portfolio</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
